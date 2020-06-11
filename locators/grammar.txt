@@ -1,0 +1,40 @@
+        CSS syntasis
+tagname[atrribute='value']
+ex. ("input[name='name']")
+
+#find element by id "#"
+tagname#value
+ex.(input#username)
+(#username)                 #tagname is optional
+
+#find element by classname  "."
+tagname.value
+
+
+CSS + regex
+[class*='alert-success']
+ex.'*= '  mach subtext in text
+
+CSS find element by traverse from parenttag to childtag
+tagname[attribute='value'] child_tag_name
+"div[id='usernamegroup'] label"
+
+        XPATH
+("//tagname[@attribute='value']")
+(ex. "//input[@type='submit']")
+
+xpath +regex
+ex.[contains(@class.'alert-successs')]
+
+
+# xpath find element by text
+"//tagname[text()='some text']"
+"//a[text()='Cancel']"
+
+
+XPATH traverse path(find element from parent to child tagname)
+//parent_Tag_Name[@attribute='vallue']/child_Tagname
+//div[@id='usernamegroup']/label
+
+if there are multiple tags with same name  first can be choose like this "/tagname[1]"
+//form[@name='login']/div[1]/tagname
