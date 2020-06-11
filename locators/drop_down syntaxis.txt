@@ -1,0 +1,10 @@
+
+------handel dropdown menu  with "select" tag
+dropdown = Select(driver.find_element_by_id("text"))
+dropdown.select_by_visible_text("text")
+
+------indexes start from 0
+dropdown.select_by_index(1)
+
+------ if the "value" argument is present in the tag
+dropdown.select_by_value()
