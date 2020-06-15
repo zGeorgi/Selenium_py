@@ -1,4 +1,5 @@
         CSS syntasis
+        ----tagname is optional-----
 tagname[atrribute='value']
 ex. ("input[name='name']")
 
@@ -19,15 +20,14 @@ CSS find element by traverse from parenttag to childtag
 tagname[attribute='value'] child_tag_name
 "div[id='usernamegroup'] label"
 
+# css way to find one of many child tags
+form[id='login_form'] label:nth-child(1)
+
         XPATH
 ("//tagname[@attribute='value']")
 (ex. "//input[@type='submit']")
 
-xpath +regex
-ex.[contains(@class.'alert-successs')]
-
-
-# xpath find element by text
+-------xpath find element by text-----
 "//tagname[text()='some text']"
 "//a[text()='Cancel']"
 

@@ -1,6 +1,9 @@
 
-------handel dropdown menu  with "select" tag
+------handel dropdown menu  with "Select" tag
+----- Select() object have to be create -----
 dropdown = Select(driver.find_element_by_id("text"))
+
+-------select by text-------------
 dropdown.select_by_visible_text("text")
 
 ------indexes start from 0

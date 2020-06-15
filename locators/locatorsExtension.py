@@ -10,8 +10,9 @@ driver.find_element_by_css_selector(".password").send_keys("parola")
 driver.find_element_by_css_selector(".password").clear()
 
 driver.find_element_by_link_text("Forgot Your Password?").click()
-
+#catch all elements with text 'Cancel' in them
 driver.find_element_by_xpath("//*[text()='Cancel']").click()
 print(driver.find_element_by_xpath("//div[@id='usernamegroup']/label").text)
 print(driver.find_element_by_css_selector("div[id='usernamegroup'] label").text)
 print(driver.find_element_by_xpath("//form[@name='login']/div[1]/label").text)
+print(driver.find_element_by_css_selector("form[name='login'] label:nth-child(4)").text)
