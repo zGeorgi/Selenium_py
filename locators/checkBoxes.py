@@ -19,6 +19,4 @@ radio_buttons = driver.find_elements_by_name("radioButton")
 print(len(radio_buttons))
 radio_buttons[2].click()
 print(radio_buttons[2].is_selected())
-
-
 driver.close()

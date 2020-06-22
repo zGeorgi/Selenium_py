@@ -1,0 +1,34 @@
+#------ return list with windows-------------
+child_window = driver.window_handles
+driver.switch_to.window(child_window[1])
+# window on first index
+driver.window_handles[0]
+
+#------- the "is_displayed()" return true or false if element is displayed---------
+assert driver.find_element_by_css_selector("#displayed-text").is_displayed()
+
+
+# ------Frame next method get argument <frame id> or <frame name> or <index_value>---------
+# move <driver> in the frame
+driver.switch_to.frame("mce_0_ifr")
+
+# switch <driver> to parent html
+driver.switch_to.default_content()
+
+# return list with frames
+seq = driver.find_elements_by_tag_name('iframe')
+# find frame by index
+myframe = driver.find_elements_by_tag_name('iframe')[0]
+driver.switch_to.frame(myframe)
+
+#------- ActionsChain class to handle the actions---------
+actions = ActionChains(driver)
+# always perform should be call on the end to be execute the action
+actions.move_to_element(driver.find_element_by_xpath("//button[text() = 'Search']")).click().perform()
+
+# Double click
+action.move_to_element(driver.find_element_by_css_selector("input[id='double-click']")).double_click().perform()
+action.double_click(driver.find_element_by_css_selector("input[id='double-click']")).perform()
+
+#context click for is right button
+action.context_click(driver.find_element_by_css_selector("input[id='double-click']")).perform()

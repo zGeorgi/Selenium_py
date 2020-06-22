@@ -21,6 +21,5 @@ time.sleep(3)
 actions = ActionChains(driver)
 # -------always perform should be call on the end to be execute the action
 actions.move_to_element(driver.find_element_by_xpath("//button[text() = 'Search']")).click().perform()
-# time.sleep(2)
 
 driver.find_element_by_link_text("Genealogies").click()
