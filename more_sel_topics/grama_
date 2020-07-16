@@ -21,7 +21,7 @@ seq = driver.find_elements_by_tag_name('iframe')
 myframe = driver.find_elements_by_tag_name('iframe')[0]
 driver.switch_to.frame(myframe)
 
-#------- ActionsChain class to handle the actions---------
+#------- ActionChains class to handle the actions---------
 actions = ActionChains(driver)
 # always perform should be call on the end to be execute the action
 actions.move_to_element(driver.find_element_by_xpath("//button[text() = 'Search']")).click().perform()
@@ -30,5 +30,5 @@ actions.move_to_element(driver.find_element_by_xpath("//button[text() = 'Search'
 action.move_to_element(driver.find_element_by_css_selector("input[id='double-click']")).double_click().perform()
 action.double_click(driver.find_element_by_css_selector("input[id='double-click']")).perform()
 
-#context click for is right button
+#context click is for right button
 action.context_click(driver.find_element_by_css_selector("input[id='double-click']")).perform()

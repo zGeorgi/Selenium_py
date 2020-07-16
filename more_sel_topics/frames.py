@@ -1,5 +1,5 @@
-# ---- driver object can access only the html and not the inbuild frame---
-# <iframe>, <frameset>, <frame> are the tags for frame declaretion
+# ---- driver object can access only the html and not the in build frame---
+# <iframe>, <frameset>, <frame> are the tags for frame declaration
 from selenium import webdriver
 
 driver = webdriver.Chrome(executable_path="/home/georgi/chromedriver/chromedriver")

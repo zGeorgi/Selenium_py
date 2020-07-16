@@ -1,3 +1,3 @@
-___traverse path is only with "XPATH"
+___traverse path is only with "XPATH" child_to_parent
 syntax:   parent::<parent_tag_name>/parent::<parent_tag_name>/<target_tag_name>
 parent::div/parent::div/h4

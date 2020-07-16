@@ -9,5 +9,6 @@ action = ActionChains(driver)
 #context click for is right button
 action.context_click(driver.find_element_by_css_selector("input[id='double-click']")).perform()
 action.double_click(driver.find_element_by_css_selector("input[id='double-click']")).perform()
-print(driver.switch_to.alert.text)
-driver.switch_to.alert.accept()
+alert = driver.switch_to.alert
+print(alert.text)
+alert.accept()

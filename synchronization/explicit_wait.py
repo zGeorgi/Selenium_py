@@ -8,7 +8,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 driver = webdriver.Chrome(executable_path="/home/georgi/chromedriver/chromedriver")
 driver.get("https://rahulshettyacademy.com/seleniumPractise")
 #--------- Explicit Wait -------------
-# make object for class "WebDriverWait(driver, 5)"
+# make object for class "WebDriverWait(<driver>, <5sec>)"
 wait = WebDriverWait(driver, 8)
 
 driver.find_element_by_css_selector("input.search-keyword").send_keys("ber")
@@ -21,8 +21,6 @@ for butt in add_to_bassket:
 
 driver.find_element_by_css_selector("a[class='cart-icon'] img").click()
 driver.find_element_by_xpath("//button[text()= 'PROCEED TO CHECKOUT']").click()
-
-
 
 # "expected_conditions" import
 # "By"  import
